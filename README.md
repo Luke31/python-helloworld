@@ -1,14 +1,18 @@
 # python-helloworld
 
-Clone git repo, build and run image: 
+Hello-World Docker Flask-REST Service based on openSUSE
+
+## How to start
+
+Use following command to clone git repo, build image and run container: 
 ```bash
-git clone git@github.com:Luke31/python-helloworld.git
-cd python-helloworld
+git clone git@github.com:Luke31/python-helloworld.git &&
+cd python-helloworld &&
 docker build -t python-hello-world . &&
-docker run -it -p 5000:5000 --name python-helloworldc python-hello-world
+docker run -it -p 5000:5000 python-hello-world
 ```
 
-Call Flask REST-Service in Browser: [localhost:5000](localhost:5000) or test in console: 
+Now you can call the Flask REST-Service in Browser: [localhost:5000](localhost:5000) or test in console: 
 ```bash
 curl localhost:5000
 ```
