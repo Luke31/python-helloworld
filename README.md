@@ -12,7 +12,7 @@ docker build -t python-hello-world . &&
 docker run -it -p 5000:5000 python-hello-world
 ```
 
-Now you can call the Flask REST-Service in your browser: [localhost:5000](localhost:5000) or test in your shell by running: 
+Now you can call the Flask REST-Service in your browser: [localhost:5000](http://localhost:5000) or test in your shell by running: 
 ```bash
 curl localhost:5000
 ```
