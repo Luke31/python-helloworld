@@ -25,9 +25,10 @@ RUN pip install --upgrade \
     pip \
     setuptools
 
-COPY . /app
 WORKDIR /app
+COPY requirements.txt /app
 RUN pip install -r requirements.txt
+COPY . /app
 CMD bash
 ENTRYPOINT ["python"]
 CMD [ "run.py" ]
