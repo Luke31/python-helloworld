@@ -25,6 +25,12 @@ RUN pip install --upgrade \
     pip \
     setuptools
 
+# Binary dependencies for tensorflow!
+RUN zypper -n in \
+    python3-devel \
+    gcc
+RUN pip install tensorflow
+
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
