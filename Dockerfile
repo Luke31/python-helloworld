@@ -3,6 +3,9 @@ COPY . /app
 RUN conda env create --file app/environment.yml -p /env
 
 FROM frolvlad/alpine-miniconda3
+
+MAINTAINER Lukas Schmid
+
 EXPOSE 5000
 COPY --from=builder /env /env
 COPY --from=builder /app /app
