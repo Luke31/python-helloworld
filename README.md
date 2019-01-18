@@ -18,8 +18,8 @@ Now you can call the Flask REST-Service in your browser:
 or test in your shell by running: 
 ```bash
 curl localhost:5000/movies
-curl localhost:5000/wordcount/hello+world
+curl localhost:5000/wordcount/hello%20world
 ```
 
-This image follow pytest good practices: [https://docs.pytest.org/en/latest/goodpractices.html](https://docs.pytest.org/en/latest/goodpractices.html)
+This image tries to follow pytest good practices: [https://docs.pytest.org/en/latest/goodpractices.html](https://docs.pytest.org/en/latest/goodpractices.html)
 and Flask-RESTful practices: [https://flask-restful.readthedocs.io/en/0.3.5/intermediate-usage.html](https://flask-restful.readthedocs.io/en/0.3.5/intermediate-usage.html)
