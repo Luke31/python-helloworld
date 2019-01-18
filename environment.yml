@@ -6,3 +6,4 @@ dependencies:
   - python==3.7
   - flask==1.0.2
   - flask-restful==0.3.6
+  - pytest==4.1.1

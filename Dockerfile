@@ -1,6 +1,10 @@
 FROM frolvlad/alpine-miniconda3 as builder
-COPY . /app
+COPY environment.yml /app/
 RUN conda env create --file app/environment.yml -p /env
+COPY . /app
+
+WORKDIR /app
+RUN source activate /env && python setup.py test
 
 FROM frolvlad/alpine-miniconda3
 
