@@ -12,9 +12,13 @@ docker build -t python-hello-world . &&
 docker run -it -p 5000:5000 python-hello-world
 ```
 
-Now you can call the Flask REST-Service in your browser: [localhost:5000](http://localhost:5000) or test in your shell by running: 
+Now you can call the Flask REST-Service in your browser: 
+[localhost:5000/movies](http://localhost:5000/movies) 
+[localhost:5000/wordcount/hello%20world](http://localhost:5000/wordcount/hello%20world)
+or test in your shell by running: 
 ```bash
-curl localhost:5000
+curl localhost:5000/movies
+curl localhost:5000/wordcount/hello+world
 ```
 
 This image follow pytest good practices: [https://docs.pytest.org/en/latest/goodpractices.html](https://docs.pytest.org/en/latest/goodpractices.html)
