@@ -4,7 +4,7 @@ RUN conda env create --file app/environment.yml -p /env
 COPY . /app
 
 WORKDIR /app
-RUN source activate /env && python setup.py test
+RUN source activate /env && pip install -e . && python setup.py test
 
 FROM frolvlad/alpine-miniconda3
 
