@@ -8,7 +8,5 @@ setup(
     license='',
     author='Lukas Schmid',
     author_email='lukas.m.schmid@gmail.com',
-    description='hello-world rest application',
-    setup_requires=["pytest-runner"],
-    tests_require=["pytest"]
+    description='hello-world rest application'
 )
