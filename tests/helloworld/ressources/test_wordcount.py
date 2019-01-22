@@ -8,4 +8,3 @@ class TestLanguages(object):
         languages.tokenize.return_value = ['hello', 'world']
         assert languages.get('hello world') == {'wordcount': 2}
         languages.tokenize.assert_called_with = 'hello world'
-

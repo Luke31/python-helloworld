@@ -22,4 +22,3 @@ class TestApp(object):
             resp = c.get('/notvalidroute')
             assert resp.status == "404 NOT FOUND"
             assert resp.data
-

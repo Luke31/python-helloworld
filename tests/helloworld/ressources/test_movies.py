@@ -1,4 +1,3 @@
-import pytest
 from src.helloworld.ressources.movies import Movies
 
 
