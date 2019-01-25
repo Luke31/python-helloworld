@@ -4,7 +4,7 @@ RUN conda env create --file app/environment.yml -p /env
 COPY . /app
 
 WORKDIR /app
-RUN source activate /env && pip install . && python setup.py test
+RUN source activate /env && pip install . && pytest --flakes
 
 FROM frolvlad/alpine-miniconda3
 
