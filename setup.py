@@ -1,4 +1,6 @@
-from setuptools import setup, find_packages
+"""packaging for helloworld."""
+
+from setuptools import find_packages, setup
 
 setup(
     name='helloworld',
@@ -10,5 +12,5 @@ setup(
     author_email='lukas.m.schmid@gmail.com',
     description='hello-world rest application',
     setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-flakes"]
+    tests_require=["pytest"]
 )
