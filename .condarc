@@ -1,0 +1,4 @@
+channel_alias: https://conda.anaconda.org/
+channels:
+  - conda-forge
+  - defaults

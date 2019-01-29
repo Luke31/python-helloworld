@@ -1,4 +1,7 @@
 FROM frolvlad/alpine-miniconda3 as builder
+
+COPY .condarc /root/
+
 COPY environment.yml /app/
 RUN conda env create --file app/environment.yml -p /env
 COPY . /app
